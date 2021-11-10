@@ -118,7 +118,7 @@ background: #FFFFFF;
 box-shadow: 0px 8px 4px rgba(43, 42, 42, 0.25);
 }
 .circle{
-display: flex;
+display: flexbox;
   width: 180px;
   height: 170px;
 
@@ -137,23 +137,168 @@ display: flex;
     grid-template-rows: 33.3% 33.3% 33.3%;
    
    }
+   .feature-text{
+    margin: 150px; 
+  padding-top: 300px;
+    font-size: 1rem;
+   }
+   
+ .img-inside-grid{
+  margin: 150px;
+
+  
+   }
+  
+  
+   @media only screen and (max-width: 550px) {
+    .feature {
+      grid-template-columns: 100%;
+      grid-template-rows:16.6% 16.6% 16.6% 16.6% 16.6% 16.6% ;
+   
+    
+    }
+    .feature-text{
+      margin: 50px; 
+    padding-top: 50px;
+      font-size: 30px;
+     }
+     
+  }
+      
+
+ 
+ 
  .get{
-   display: grid;
-   grid-template-columns: 25% 75%;
-   grid-template: max-content;
-  height: 776px;
-  top: 2893px;
-  background: linear-gradient(180deg, #0C1753 0%, #0C1753 100%);
+display: grid;
+grid-template-columns: 50% 25% 25%;
+grid-template-rows:12.5% 12.5% 12.5% 12.5% 37.5% 12.5% ;
+padding-left: 50px;
+padding-right: 80px;
+padding-top: 30px;
+padding-bottom: 100px;
+grid-gap: 0.6rem;
+
+background: linear-gradient(180deg, #0C1753 0%, #0C1753 100%);
+grid-template-areas:
+" text-get   as  as"
+"text-get Full-name City   "
+"  text-get  Email Email "
+" text-get Subject Subject  "
+" text-get Message Message  "
+"text-get Submit Submit";
+}
+
+#text-get{width: 100% ;height:100% ;  grid-area:text-get;
+padding-top: 50px;
+padding-right: 200px;;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 68px;
+  /* or 106% */
+  
+  letter-spacing: -0.03em;
+  
+  color: #FFFFFF;
+  
+}
+#as{width: 100%; grid-area:as;
+
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 32px;
+  /* identical to box height, or 114% */
+  
+  
+  color: #FFFFFF;
+  
+}
+#Full-name{width: 100% ;grid-area: Full-name;}
+#City{width: 100%; grid-area:City;}
+#Email{width: 100%; grid-area:Email;}
+#Subject{width: 100%; grid-area:Subject;}
+#Message{width: 100%; grid-area:Message;
+ 
+ 
+  /* input */
+  
+  background: #FFFFFF;
+  border: 2px solid rgba(159, 160, 184, 0.4);
+ 
+  border-radius: 5px;
+
+
+  
+}
+input, select, textarea{
+  
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+color: rgba(12, 23, 83, 0.8);;
+ 
+}
+#Submit{
+  width: 100%; grid-area:Submit;
+
+
+  height: 50px;
+
+  background: #FFE101;
+  border-radius: 5px;
+}
+
+
+ #last{
+  padding: 30px;
+display: flex;
+  flex-wrap: wrap;
 
  }
- .form{
+ 
+ .f{
+  
+  display: flex;
+  flex-direction: column;
+ flex-wrap: wrap;
+ }
+ h3{
 
+ 
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 44px;
+  color: #00A69C;
 
  }
- .last{
+ .footer-text{
+padding-left: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 180.5%;
+  /* or 54px */
+  letter-spacing: -0.005em;
+  
+  color: #0C1753;
 
-  height: 80px;
  }
+ #f2{ }
+ #f3{}
+ #f4{
+  
+
+ }
+ .so{
+  padding-left: 20px;
+  display: flex;
+  flex-direction:row;
+ 
+ }
+ .icon{
+
+height: 40px;
+width: 50px;
+ }
+
  .footer{
 
   background: linear-gradient(180deg, rgba(12, 23, 83, 0.58) 0%, rgba(147, 117, 255, 0.58) 97.92%);
