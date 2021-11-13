@@ -202,7 +202,6 @@ height: 65%;
    }
    
 }
-    
 
 
 .get{
@@ -226,6 +225,31 @@ height: 65%;
   "text-get Submit Submit";
   }
 
+      
+@media only screen and (max-width: 700px) {
+  .get{
+    display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows:12.5% 12.5% 12.5% 12.5% 12.5%  25% 12.5% ;
+  grid-template-areas:
+  " text-get text-get  "
+  " as as"
+  "Full-name City   "
+  
+  " Email Email "
+  "  Subject Subject  "
+  "  Message Message  "
+  "  Message Message  "
+  " Submit Submit";
+
+  }
+  #text-get{width: 100%  ;  grid-area:text-get;
+    padding-top: 50px;
+    padding-right: 200px;;
+  
+    font-size: 30px;
+    line-height: 68px;}
+}
 #text-get{width: 100%  ;  grid-area:text-get;
 padding-top: 50px;
 padding-right: 200px;;
@@ -239,7 +263,8 @@ letter-spacing: -0.03em;
 color: #FFFFFF;
 
 }
-#as{width: 100%; grid-area:as;
+#as{width: 100%; 
+  grid-area:as;
 
 font-weight: 500;
 font-size: 28px;
@@ -300,6 +325,11 @@ flex-wrap: nowrap;
     text-align: center;
     align-items: center;
   }
+  #fi{
+    align-self: center;
+  width: 226/2px;
+  height: 126/2px;
+  }
 }
 .f{
 
@@ -309,6 +339,7 @@ flex-wrap: wrap;
 padding-left: 40px;
 
 }
+
 h3{
 
 
@@ -332,8 +363,8 @@ color: #0C1753;
 }
 #fi{
   align-self: center;
-width: 20%;
-height: 20%;
+max-width: 020%;
+max-height: 020%;
 }
 #f2{ }
 #f3{}
