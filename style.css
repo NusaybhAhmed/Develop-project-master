@@ -122,12 +122,12 @@ font-size: 1.4em;
 
 .braek{
  display:flexbox;
-  margin:54px;   
+  margin:2vw;   
 }
 .Services{
   display:flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content:space-around;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color:#9375FF1A;
@@ -141,8 +141,8 @@ padding-top: 30px;
 padding-bottom: 30px;
 width: 346px;
 height: 342px;
-left: 2000px;
-top: 968px;
+left: 200px;
+right:  968px;
 margin: 0.25rem;
 
 background: #FFFFFF;
@@ -206,15 +206,13 @@ height: 65%;
 
 .get{
   display: grid;
-  grid-template-columns: 50% 25% 25%;
-  
+  grid-template-columns: 50% 25% 25%; 
   grid-template-rows:12.5% 12.5% 12.5% 12.5% 37.5% 12.5% ;
   padding-left: 50px;
   padding-right: 80px;
-  padding-top: 30px;
-  padding-bottom: 100px;
+  padding-top: 45px;
+  padding-bottom: 140px;
   grid-gap: 0.6rem;
-  
   background: linear-gradient(180deg, #0C1753 0%, #0C1753 100%);
   grid-template-areas:
   " text-get   as  as"
@@ -225,31 +223,8 @@ height: 65%;
   "text-get Submit Submit";
   }
 
-      
-@media only screen and (max-width: 700px) {
-  .get{
-    display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows:12.5% 12.5% 12.5% 12.5% 12.5%  25% 12.5% ;
-  grid-template-areas:
-  " text-get text-get  "
-  " as as"
-  "Full-name City   "
-  
-  " Email Email "
-  "  Subject Subject  "
-  "  Message Message  "
-  "  Message Message  "
-  " Submit Submit";
 
-  }
-  #text-get{width: 100%  ;  grid-area:text-get;
-    padding-top: 50px;
-    padding-right: 200px;;
   
-    font-size: 30px;
-    line-height: 68px;}
-}
 #text-get{width: 100%  ;  grid-area:text-get;
 padding-top: 50px;
 padding-right: 200px;;
@@ -302,13 +277,57 @@ color: rgba(12, 23, 83, 0.8);;
 }
 #Submit{
 width: 100%; grid-area:Submit;
-
+font-size: 2.3vw;
 
 height: 50px;
 
 background: #FFE101;
 border-radius: 5px;
 }
+
+
+      
+@media only screen and (max-width: 700px) {
+  .get{
+    display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows:12.5% 12.5% 12.5% 12.5% 12.5%  25% 12.5% ;
+  grid-gap: 0.6rem;
+  grid-template-areas:
+  " text-get text-get  "
+  " as as"
+  "Full-name City   "
+  
+  " Email Email "
+  "  Subject Subject  "
+  "  Message Message  "
+  "  Message Message  "
+  " Submit Submit";
+  }
+
+  
+#text-get{width: 100% ; 
+grid-area:text-get ;
+font-size: 30px;
+padding-top: 50px;
+padding-bottom: 50px;
+padding-right: 20px;;
+
+}
+#as{width: 100%; 
+  grid-area:as;
+
+font-weight: 500;
+font-size: 28px;
+line-height: 32px;
+/* identical to box height, or 114% */
+
+
+color: #FFFFFF;
+
+}
+
+  }
 
 
 #last{
