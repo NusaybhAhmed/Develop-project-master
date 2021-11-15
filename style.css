@@ -289,47 +289,40 @@ border-radius: 5px;
 
 
       
-@media only screen and (max-width: 700px) {
-  .get{
-    display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows:12.5% 12.5% 12.5% 12.5% 12.5%  25% 12.5% ;
-  grid-gap: 0.6rem;
-  grid-template-areas:
-  " text-get text-get  "
-  " as as"
-  "Full-name City   "
-  
-  " Email Email "
-  "  Subject Subject  "
-  "  Message Message  "
-  "  Message Message  "
-  " Submit Submit";
+@media only screen and (max-width: 550px) {
+  .get {
+    width:100%;
+    grid-template-columns: 100%;
+    grid-template-rows:20% 12% 12% 12% 12% 12% 12%;
+    grid-gap: 0.6rem;
+    grid-template-areas:
+        " text-get"
+        "as"
+        "Full-name "
+        "City"
+        " Email "
+        " Subject "
+        " Message "
+        "Submit";
   }
+  #text-get{ 
 
+    font-size: 30px;
+    padding-top: 0px;
+    padding-right: 0px;;
+    font-weight: bold;
+
+    
+    }
+    #as{
+    font-size: 15px;
+
+    
+    }
   
-#text-get{width: 100% ; 
-grid-area:text-get ;
-font-size: 30px;
-padding-top: 50px;
-padding-bottom: 50px;
-padding-right: 20px;;
-
 }
-#as{width: 100%; 
-  grid-area:as;
+  
 
-font-weight: 500;
-font-size: 28px;
-line-height: 32px;
-/* identical to box height, or 114% */
-
-
-color: #FFFFFF;
-
-}
-
-  }
 
 
 #last{
